@@ -8,6 +8,197 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+    <!-- NAVIGASI MULAI -->
+
+    <nav>
+        <header>
+            <div class="logo"></div>
+        </header>
+
+        <section class="judul-website">
+            <h1>AZARIA COLLECTION</h1>
+        </section>
+
+        <section class="nav-container">
+            <a href="#" class="nav-item">Home</a>
+            <a href="#profil" class="nav-item">My Profile</a>
+            <!-- <a href="#" class="nav-item">Achievment</a> -->
+            <a href="#message" class="nav-item">Contact Me</a>
+        </section>
+    </nav>
+
+    <!-- NAVIGASI SELESAI -->
+
+    <hr class="batas">
+
+    <!-- KONTEN TENGAH, SLIDESHOW MULAI -->
+
+    <main>
+        <article>
+            <header>
+                <h1>Welcome <span id="name-promt">User</span>, to My Website</h1>
+            </header>
+<br>
+                <p><i><strong>Hello, This is My First Website</strong></i></p>
+                <p>I created this website seriously and with a strong desire</p>
+            
+                <div class="slideshow-container">
+                    <img class="img-slideshow" 
+                    src="https://pictures.porsche.com/rtt/iris?COSY-EU-100-1711coMvsi60AAt5FwcmBEgA4qP8iBUDxPE3Cb9pNXkBuNYdMGF4tl3U0%25z8rMHIspbWvanYb%255y%25oq%25vSTmjMXD4qAZeoNBPUSfUx4RmHlCgI7Zl2dioCxkF%25vUqCNwuWXsOw3meV6iTCj%25zhRc2GRdqAZ%25oD21P%25S1BAXmenugTfeIJpV7nDhQS">
+
+                    <img class="img-slideshow" 
+                    src="https://www.carscoops.com/wp-content/uploads/2020/08/2020-audi-rs7-tuning-nebulus-0.jpg" >
+
+                    <img class="img-slideshow" 
+                    src="https://hips.hearstapps.com/hmg-prod/images/2023-lightning-lap-honda-civic-type-r-mu-102-1675451016.jpg?crop=0.492xw:0.416xh;0.202xw,0.391xh&resize=1200:*">
+                    </div> 
+                  
+                    
+        
+                    <button class="slideshow-button" onclick="plusDivs(-1)">Previous</button>
+                    <button class="slideshow-button" onclick="plusDivs(1)">Next</button>
+                    
+                    <br>
+
+                    <!-- KONTEN TENGAH, SLIDESHOW SELESAI -->
+
+                    <!-- VISI MISI MULAI -->
+
+                <h1><i>Vision and Mission</i></h1>
+                <br>
+                <h2 class="visi">Vision</h2>
+                <p class="visi"><cite><q><strong>Building the largest business power in Southeast Asia</strong></q></cite></p>
+                <br>
+                <h2 class="visi">Mission</h2>
+                <div class="misi">
+
+                    <ul>
+                        <li class="isi-misi">Have above average coding skills</li>
+                        <li class="isi-misi">Have various kinds of Motor Sports like H2r</li>
+                        <li class="isi-misi">Owns Porsche, Audi, Ferrari, Honda Civic and many more</li>
+                        <li class="isi-misi">has a mansion in the USA</li>
+                        <li class="isi-misi">Having a growing company in the middle of Southeast Asia</li>
+                        <li class="isi-misi">Having a restaurant that rivals all the huts in Indonesia</li>
+                        <li class="isi-misi">Having a very strong religion as a foundation and identity</li>
+                    </ul>
+                </div>
+
+                <!-- VISI MISI SELESAI -->
+            
+
+        </article>
+        
+<hr class="batas">
+
+        <!-- PROFIL MULAI -->
+
+        <section class="profile-all">
+            <header class="profile-judul">
+                <h1 id="profil">My Profile</h1>
+            </header>
+            <section class="profile-head">
+            <div class="profile">
+                <div class="profile-logo-kepsek"></div>
+                <h2>2021-2022</h2>
+                <p>Rahmatika Al Atsary Integrated High School Subang</p>
+            </div>
+            <div class="profile">
+                <div class="profile-logo-wakepsek-siswa"></div>
+                <h2>2023-2024</h2>
+                <p>State High School 5 Karawang</p>
+            </div>
+            <div class="profile">
+                <div class="profile-logo-guru"></div>
+                <h2>2024-Present</h2>
+                <p>Computer University of Indonesia</p>
+            </div>
+            </section>
+        </section>
+
+        <!-- PROFIL SELESAI -->
+
+<hr class="batas">
+
+        <!-- FORM MULAI -->
+
+<section class="form-all">
+    <header class="form-judul">
+<h1 id="message">Contact Me</h1>
+</header>
+<section class="form-dalam">
+    <section class="form-isi">
+<form name="message-form" onsubmit="return validateForm()">
+    Name:
+    <input class="input1" placeholder="Your Name" type="text" name="full-name">
+    <br>
+
+
+    date of Birth:
+    <input class="input1" type="date" name="birth-date">
+    <br>
+
+    Gender:
+    <br>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">Man</label>
+    <input type="radio" id="female" name="gender" value="male">
+    <label for="female">Women</label>
+    <br> 
+
+    Message: 
+    <textarea placeholder="Write Here" name="messages"></textarea>
+    <br>
+
+    <input class="tombol-submit" type="submit" value="Submit">
+</form>
+</section>
+<section class="form-hasil">
+<div>
+    <p class="hasil">Name:
+        <br>
+        <div class="hasil-span">
+            <span id="sender-full-name"></span>
+        </div>
+    </p>
+    <p class="hasil">Date of Birth: 
+        <br>
+        <div class="hasil-span">
+         <span id="sender-birth-date"></span>
+        </div>
+    </p> 
+    <p class="hasil">Gender:
+        <br>
+        <div class="hasil-span">
+        <span id="sender-gender"></span>
+    </div>
+    </p>
+    <p class="hasil">Message:
+        <br>
+        <div class="hasil-span">
+        <span id="sender-messages"></span>
+    </div>
+    </p>
+</div>
+</section>
+</section>
+</section>
+
+    <!-- FORM SELESAI -->
+
+</main>
+
     
+
+<hr class="batas">
+
+    <!-- FOOTER MULAI -->
+<footer>
+    <p>Created By Arya Yaga Rafi' Azaria - 2024</p>
+</footer>
+
+    <!-- FOOTER SELESAI -->
+
+<script src="js/script.js"></script>
 </body>
 </html>
